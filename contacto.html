@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ec0ccad6ca.js" crossorigin="anonymous"></script> <!--Script para poner iconos de fontawesome-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="menu">
+        <li><a class= "menu-item" ID="inicio" href="index.html"> Criptotimba <i id="icon" class="fa-solid fa-rocket"></i>
+            <i id="icon" class="fa-solid fa-moon"></i> </a></li>
+        <li><a class= "menu-item" ID="Aprende" href="Invertir.html"> Aprende a Invertir </a></li>
+        <li><a class= "menu-item" ID="Contacto" href ="Contacto.html"> Contacto </a> </li>
+    </header>
+    
+    <br>
+    
+    <main>
+       
+    <form action="https://formspree.io/f/xjvloryg" method="POST">
+        
+        <h1 class="form_titulo">CONTACTANOS</h1>      
+        
+        <label for="nombre" class="form_label">Nombre:</label>
+        <input type="text" name="nombre" class="form_input" id="nombre" placeholder="Ingrese su nombre aqui..." id ="nombre">
+
+        <label for="apellido" class="form_label">Apellido:</label>
+        <input type="text" name="apellido" class="form_input" id="apellido" placeholder="Ingrese su apellido aqui...">
+        
+        <label for="mail_contacto" class="form_label">Mail de contacto:</label>
+        <input type="email" name="Mail" class="form_input" id="mail" placeholder="Ingrese su mail aqui...">
+
+        <label for="Motivo" class="form_label" id="Motivo">Motivo de contacto </label>
+
+        <h4 class="Options">
+            <input type="radio" name="Razon" class="form_input_2" value="Error a reportar"> Error 
+            <input type="radio" name="Razon" class="form_input_2" value="Sugerencia de mejora"> Sugerencia
+            <input type="radio" name="Razon" class="form_input_2" value="Molestar"> Consulta
+        </h4> 
+       
+        <label class="form_label" >Comentarios:</label>
+        <input name="comentarios" type="text" class="form_input" id="coment_input" placeholder="Ingrese su mensaje..." >
+
+        <!-- <input type="reset" name="Limpiar"> --Resetexa los campos del formulario-->
+        <button type="submit" class="Enviar" id="Enviar_id">Enviar</button>
+        
+        <p class="warnings" id="warnings"></p>
+
+        <script src="contacto.js"></script>
+    
+        
+    </form>
+
+    </main>
+
+    <br>
+    <footer>
+        <div class="Pie">
+            <a class= "menu-item" ID="inicio" href="index.html"> Criptotimba <i id="icon" class="fa-solid fa-rocket"></i>
+                <i id="icon" class="fa-solid fa-moon"></i>
+            </a>
+            <h2 class="Derechos">2022 - Todos los derechos reservados</h2>
+        </div>
+
+        <div class="Pie">
+            <h3 class="Redes-ley">Seguinos en nuestras redes</h3>
+            <div class="Redes-sociales">
+                <a class="Redes" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a class="Redes" href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a class="Redes" href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+        </div>        
+    </footer>
+
+</body>
+</html>

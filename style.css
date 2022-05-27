@@ -1,0 +1,283 @@
+*{
+font-family: Georgia, 'Times New Roman', Times, serif;
+color:white;
+font-size: 1rem;
+margin: 0;
+padding: 0;
+background-color: rgba(221, 221, 221, 0.877);
+}
+
+/*------------INDEX------------*/
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    border-bottom-width: 0.02em;
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-style: solid;
+}
+
+.ventana{
+    display: inline-block;
+}
+
+.ventana,.ventana2,.ventana3,.ventana4 {
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    bottom: 20%;
+    display: grid;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.98);/*rgb(120, 201, 183);*/
+    transition: opacity .6s .9s;
+    border-color: black;
+    border: 4px solid ;
+    border-radius: 10px;
+}
+
+.Tit_btc, .Text_btc, .Tit_eth, .Text_eth, .Tit_usdt, .Text_usdt, .Tit_BNB, .Text_BNB, .Detalle{
+    color: white;
+    opacity: 1;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.98);/*rgb(120, 201, 183);*/
+    margin:auto
+}
+
+.Tit_btc,.Tit_eth, .Tit_usdt, .Tit_BNB {
+    font-size: 25px;
+}
+
+#img_btc, #img_eth, #img_usdt, #img_BNB{
+    width: 200px;
+    height: 150px;
+    margin:auto
+}
+
+.show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .2s;
+
+}
+
+#close, #close2 ,#close3 ,#close4{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(89, 109, 89);
+    padding: 0.5em;
+    border: 2px solid ;
+    border-radius: 10px;
+    transition: background-color .3s;
+    margin:auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+#close:hover{
+    color: #F26250;
+    background-color: gold;
+}
+
+
+li{
+    margin: 0 0 0 1.5em;
+}
+
+li ,.menu, .menu-item, #icon {
+    text-decoration: none;
+    background-color: black;
+    font-weight: bold;
+}
+
+#inicio{
+    font-size: 1.1rem;
+}
+
+section {
+    margin: 1em 1em 1em 15em;
+}
+
+img{
+    width: 25em;
+    height: 15em;
+    padding: 0.15em;
+    border-radius: 1rem;
+    cursor: pointer; /*Al posarse con el cursor cambia a una mano*/
+    transition: 0.5s;
+}
+
+.img_men:hover{
+    transform: scale(1.06,1.06); /*para que le haga zoom a la imagen al posarse con el mouse*/
+}
+
+/*Footer*/
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:0.5em; /*margen en las columnas*/
+    padding: 1em 1em 1em 1.5em;
+    border-top-width: 0.02em;
+    border-top-color: rgba(196, 196, 196, 0.699);
+    border-top-style: solid;
+    background-color: black;
+    bottom: 0;
+    margin-top: 0.5rem;
+   
+}
+
+.Pie, .Redes-ley, .Redes-sociales, .Redes, .Redes > i{
+    background-color: black;
+    text-decoration: none; /*quietar lo subrayado de los links*/
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.Derechos {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+}
+
+.menu-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Redes-ley {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Redes-sociales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------INVERTIR------------*/
+
+.Videos{
+    display: flex;
+    flex-direction: column;
+}
+
+.video{
+    display: block;
+    height: 25rem ;
+    width: 40rem ;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#video1, #video2{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    margin: 1rem;
+}
+
+/*-----------FORMULARIO------------*/
+
+form {
+    width: 400px;
+    margin: auto;
+    padding: 2%;
+    background-color: rgb(59, 55, 55);
+    display: grid;
+
+}
+
+.form_titulo {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+    background-color:rgb(59, 55, 55);
+}
+
+.form_label {
+    background-color: rgb(59, 55, 55);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+.form_input {
+    color: black;
+    font-size: 0.85rem;
+    height: 1.5rem;
+    width: 90%;
+    margin: auto;
+}
+
+.Options{
+    background-color: rgb(59, 55, 55);
+    margin-right: 10rem;
+    width: 90%;
+}
+
+.form_input_2{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+#coment_input{
+    height: 3rem;
+    padding: 0.25rem;
+    margin: 1rem;
+    margin: auto;
+    width: 90%;
+}
+
+.Enviar {
+    color: black;
+    background-color: rgba(217, 226, 217, 0.938);
+    cursor: pointer; /*al posarse cambia una mano el clik*/
+    height: 2rem;
+    border: 1rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.Enviar:hover { /*cuando se posa en el mouse cambia el color de botón*/
+    background-color: rgb(73, 153, 73);
+}
+
+.warnings {
+    color: rgb(115, 238, 15);
+    background-color: rgb(59, 55, 55);
+    text-align: center;
+}
+
+
+@media (max-width:450px) {
+	#Videos{width: 100%
+    }
+}
+
+@media (max-height:450px) {
+	#Videos{height: 100%
+    }
+}
